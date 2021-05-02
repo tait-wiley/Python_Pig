@@ -9,8 +9,7 @@ turnStart = random.randint(1,2)
 while humanTotalScore < 100 and computerTotalScore < 100:
     if turnStart == 1:
         print('Your turn')
-        while True:#because a human is playing now i didnt give a parameter
-                    #for the loop
+        while True:
             dieRoll = random.randint(1, 6)
             print('You rolled -', dieRoll)
             if dieRoll == 1:
@@ -30,8 +29,6 @@ while humanTotalScore < 100 and computerTotalScore < 100:
                 print('             Your total score is', humanTotalScore)
                 print('             Computer total score is', computerTotalScore)
                 selection = input('Press "r" to roll again, or "h" to hold ')
-                #I didnt specify what happens if something other than r or h
-                #is pressed, but is seems to continue the loop
                 if selection == 'r':
                     continue
                 if selection == 'h':
